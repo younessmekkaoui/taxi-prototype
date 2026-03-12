@@ -56,12 +56,12 @@ const css = `
     --shadow-lg: 0 8px 40px rgba(26,92,53,0.14), 0 2px 8px rgba(0,0,0,0.06);
   }
 
-  body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); -webkit-font-smoothing: antialiased; }
+body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); -webkit-font-smoothing: antialiased; margin: 0; width: 100%; overflow-x: hidden; }
 
-  .app { min-height: 100vh; display: flex; flex-direction: column; }
+  .app { min-height: 100vh; display: flex; flex-direction: column; width: 100%; }
 
   /* NAV */
-  .nav { background: var(--ink); padding: 0 32px; display: flex; align-items: center; gap: 0; height: 60px; border-bottom: 2px solid var(--green); }
+  .nav { background: var(--ink); padding: 0 48px; display: flex; align-items: center; gap: 0; height: 60px; border-bottom: 2px solid var(--green); width: 100%; }
   .nav-brand { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--gold); letter-spacing: 0.02em; margin-right: auto; }
   .nav-brand span { color: #fff; }
   .nav-tab { padding: 0 20px; height: 60px; display: flex; align-items: center; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-lt); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.2s; }
@@ -69,7 +69,7 @@ const css = `
   .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
   /* LAYOUT */
-  .page { flex: 1; padding: 32px; max-width: 1200px; margin: 0 auto; width: 100%; }
+  .page { flex: 1; padding: 32px 48px; width: 100%; min-width: 0; }
   .page-title { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--green); margin-bottom: 4px; }
   .page-sub { font-size: 14px; color: var(--ink-lt); margin-bottom: 28px; }
 
